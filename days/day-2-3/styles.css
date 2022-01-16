@@ -3,6 +3,29 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 1);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width:1000px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 20px;
+}
+
+a {
+    background:cadetblue;
+    padding: 5px 10px;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    background:chocolate;
+}
+
+h1 {
+    margin: 0;
 }
