@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(250, 235, 215, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  background:cadetblue;
+  padding: 5px 10px;
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  background:chocolate;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+    max-width:1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .quote {
+    background:white;
+    position: relative;
+    z-index: 5;
+    max-width: 500px;
+    height: 300px;
+    margin: 125px auto;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 5px 5px 0 0;
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+

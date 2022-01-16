@@ -17,7 +17,7 @@ function myFunction() {
     }
 }
 
-const pageLinks = ["1", "2", "2-1", "2-2", "2-3", "2-4"];
+const pageLinks = ["1", "2", "2-1", "2-2", "2-3", "2-4", "2-5"];
 
 const progressLinksPages = document.getElementById('progress-links-pages');
 
