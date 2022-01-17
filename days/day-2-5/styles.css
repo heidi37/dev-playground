@@ -12,6 +12,7 @@ a {
   padding: 5px 10px;
   color: antiquewhite;
   text-decoration: none;
+  margin: 5px 5px 5px 0;
 }
 
 a:hover,
@@ -27,6 +28,7 @@ h1 {
     max-width:1000px;
     margin: 0 auto;
     padding: 20px;
+    height: auto;
 }
 
 #myVideo {
@@ -45,17 +47,16 @@ h1 {
     width: 100%;
     padding: 20px;
   }
-
   .quote {
     background:white;
     position: relative;
     z-index: 5;
     max-width: 500px;
-    height: 300px;
-    margin: 125px auto;
-    padding: 25px;
+    height: auto;
+    margin: 100px auto;
+    padding: 10px;
     background-color: rgba(255, 255, 255, .8);
-    font-size: 1.75rem;
+    font-size: 1.3rem;
     line-height: 1.4;
   }
   
@@ -77,5 +78,23 @@ h1 {
   #myBtn:hover {
     background: #ddd;
     color: black;
+  }
+
+  #progress-links-pages {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Media Queries */
+  @media(min-width: 500px) {
+    
+    .quote {
+      margin: 125px auto;
+      font-size: 1.75rem;
+      line-height: 1.4;
+      padding: 25px;
+    }
+
+
   }
 
