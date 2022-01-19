@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>day 4 - dev playground</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="#quote">quote</a>
+        <a href="#content">content</a>
+        <a href="#progress-links-pages">progress</a>
+    </nav>
+    <div class="logo"><p>dev playground</p></div>
+    <button id="myBtn" onclick="myFunction()">pause fish</button>
+  </header>
+    <main>
+    <video autoplay muted loop id="myVideo">
+        <source src="../../fish-video.mp4" type="video/mp4">
+      </video>
+      <div class="quote">
+          <a class="anchor" id="quote"></a>
+          <blockquote><p>"A great quote goes here! I will do this with an API and Javascript. Stay tuned!"</p>
+            <cite>~Heidi</cite>
+          </blockquote>
+          <button id="quoteBtn">I don't like quote 👎</button>
+      </div>
+      <div class="content">
+        <a class="anchor" id="content"></a>
+        <h1>Headline 1</h1>
+        <p>This is the content. This is the first paragraph of the content. The content is really fascinating at this point.</p>
+        <h2>Headline 2</h2>
+        <p>The content gets better and better the more you read.</p> 
+        <h2>Headline 2</h2>
+        <p>The content gets better and better the more you read.</p> 
+        <h3>Headline 3</h3>
+        <p>The content gets better and better the more you read.</p>  
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+          <div class="container">
+            <h1>dev playground - day 3</h1>
+            <p><strong>01-19-2022: </strong>Add top navigation.</p>
+            <h2>Progress</h2>
+            <div id="progress-links-pages">
+                <a href="../../index.html">latest</a>
+            </div>
+            <!-- Use a button to pause/play the video with JavaScript -->
+          </div>
+      </div>
+    </footer>
+    <script src="../../app-pages.js"></script> 
+</body>
+</html>
