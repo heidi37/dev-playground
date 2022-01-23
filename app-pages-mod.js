@@ -19,12 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const hideQuote = document.getElementById("hidequoteBtn");
     const quoteBlock = document.querySelector(".quote");
     const quoteLink = document.getElementById("quoteLink");
-    console.log(quoteLink);
+    const content = document.querySelector(".content");
+
     // hide quote
 
     hideQuote.addEventListener("click", function () {
         quoteBlock.style.display = "none";
         quoteLink.style.display = "none";
+        content.classList.add("moveContent");
 
     })
 
