@@ -1,22 +1,4 @@
-//use an array to render the page links
-
-// Get the video
-var video = document.getElementById("myVideo");
-
-// Get the button
-var btn = document.getElementById("myBtn");
-
-// Pause and play the video, and change the button text
-function myFunction() {
-    if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-    } else {
-        video.pause();
-        btn.innerHTML = "Play";
-    }
-}
-
+//import an array to render the page links
 import { pageLinks } from './page-array.js';
 
 const progressLinksPages = document.getElementById('progress-links-pages');
@@ -34,6 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const button = document.getElementById("quoteBtn");
     const quote = document.querySelector("blockquote p");
     const cite = document.querySelector("blockquote cite");
+    const hideQuote = document.getElementById("hidequoteBtn");
+    const quoteBlock = document.querySelector(".quote");
+    const quoteLink = document.getElementById("quoteLink");
+    console.log(quoteLink);
+    // hide quote
+
+    hideQuote.addEventListener("click", function () {
+        quoteBlock.style.display = "none";
+        quoteLink.style.display = "none";
+
+    })
 
     async function updateQuote() {
         // Fetch a random quote from the Quotable API
@@ -55,5 +48,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // call updateQuote once when page loads
     updateQuote();
 });
-
 
