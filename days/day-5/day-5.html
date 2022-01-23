@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>day 5 - dev playground</title>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="#quote">quote</a>
+        <a href="#content">content</a>
+        <a href="#progress-links-pages">progress</a>
+    </nav>
+    <div class="logo"><p>dev playground</p></div>
+    <button id="myBtn" onclick="myFunction()">pause fish</button>
+  </header>
+    <main>
+    <video autoplay muted loop id="myVideo">
+        <source src="../../fish-video.mp4" type="video/mp4">
+      </video>
+      <div class="quote">
+          <a class="anchor" id="quote"></a>
+          <blockquote><p>"A great quote goes here! I will do this with an API and Javascript. Stay tuned!"</p>
+            <cite>~Heidi</cite>
+          </blockquote>
+          <button id="quoteBtn">I don't like quote 👎</button>
+      </div>
+      <div class="content">
+        <a class="anchor" id="content"></a>
+        <h1>Day 5</h1>
+        <h2>JavaScript Modules</h2>
+        <p>The index.html file is importing a new .js file as a type="module". This file gets the pages array from another .js file.</p>
+        <pre></pre>
+        <h2></h2>
+        <code>
+          &lt;script src="index.js" type="module"&gt;&lt;/script&gt;
+        </code> 
+        <p>This is the code in index.js to import the array</p>
+        <code>
+          import { pageLinks } from './page-array.js';
+        </code>
+        <p>This is the code in page-array.js that exports the page array</p>
+        <code>
+          export { pageLinks };
+        </code>
+        <p>The meta refresh is getting generated dynamically</p>
+        <code>
+          const meta = document.createElement("meta");
+
+          document.head.appendChild(meta);
+          
+          meta.setAttribute("http-equiv", "Refresh");
+
+          meta.setAttribute
+          ("content", `0; url='days/day-${pageLinks[index]}/
+          day-${pageLinks[index]}.html'`)  
+          </code>
+        </code>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+          <div class="container">
+            <h1>dev playground - day 5</h1>
+            <p><strong>01-23-2022: </strong>The index page ("latest" button below) in now dynamically meta refreshing to the most current page.</p>
+            <h2>Progress</h2>
+            <div id="progress-links-pages">
+                <a href="../../index.html">latest</a>
+            </div>
+            <!-- Use a button to pause/play the video with JavaScript -->
+          </div>
+      </div>
+    </footer>
+    <script src="../../app-pages-mod.js" type="module"></script> 
+</body>
+</html>

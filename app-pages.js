@@ -17,7 +17,7 @@ function myFunction() {
   }
 }
 
-const pageLinks = ["1", "2", "2-1", "2-2", "2-3", "2-4", "2-5", "3", "4"];
+const pageLinks = ["1", "2", "2-1", "2-2", "2-3", "2-4", "2-5", "3", "4", "5"];
 
 const progressLinksPages = document.getElementById('progress-links-pages');
 
@@ -55,3 +55,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // call updateQuote once when page loads
   updateQuote();
 });
+
+
