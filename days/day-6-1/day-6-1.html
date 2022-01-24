@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>day 6-1 - dev play</title>
+</head>
+<body>
+  <header>
+    <div id="dayNumberTop">6-1</div>
+    <nav>
+        <div class="logo"><p>devPlay</p></div>
+        <a href="#quote" id="quoteLink">quote</a>
+        <a href="#content">content</a>
+        <a href="#progress-links-pages">progress</a>
+    </nav>
+    <div>
+      <button id="myBtn" onclick="myFunction()">🎥 pause</button>
+      <button id="randBtn" onclick="pickVideo()">🎥 random</button>
+    </div>
+  </header>
+  <main>
+    <video autoplay muted loop id="myVideo">
+        <source src="../../fish-video.mp4" type="video/mp4">
+    </video>
+    <div class="quote">
+        <a class="anchor" id="quote"></a>
+        <h2>Great Quotes</h2>
+          <blockquote><p>"A great quote goes here! I will do this with an API and Javascript. Stay tuned!"</p>
+          <cite>~Heidi</cite>
+        </blockquote>
+        <button id="quoteBtn">👍 New Quote</button>
+        <button id="hidequoteBtn">👎 No Quote</button>
+        <small>Powered by <a href="https://github.com/lukePeavey/quotable" class="regLinks" target="_blank">Quotable</a></small>
+    </div>
+    <div class="content">
+      <a class="anchor" id="content"></a>
+      <h2>Demo Area</h2>
+      <p>Here I can put cool stuff that I am practicing. Heck yeah!</p>
+      <div><iframe allow="fullscreen" frameBorder="0" src="https://giphy.com/embed/G96zgIcQn1L2xpmdxi/video"></iframe></div>
+    </div>
+    <div class="content">
+      <div id="dayNumber">6-1</div>
+      <p id="date"><strong>01-24-2022</strong></p>
+      <h2>What I Did</h2>
+      <ul>
+        <li>Validated HTML</li>
+        <li>Validated CSS</li>
+        <li>Demo Box and Office Gif</li>
+      </ul>
+      <h2>What Is Next</h2>
+      <ul>
+        <li>More Examples of what I can do with HTML/CSS/Javascript</li>
+      </ul>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+        <div class="container">
+          <h2>Progress</h2>
+          <div id="progress-links-pages">
+              <a href="../../index.html">latest</a>
+          </div>
+        </div>
+    </div>
+  </footer>
+  <script src="../../app-pages-mod.js" type="module"></script> 
+  <script src="../../video.js"></script> 
+</body>
+</html>
