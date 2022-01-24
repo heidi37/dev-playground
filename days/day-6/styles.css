@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(250, 235, 215, 1);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+a, button {
+  background:cadetblue;
+  padding: 10px 20px;
+  color: antiquewhite;
+  text-decoration: none;
+  margin: 5px 5px 5px 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+button {
+  border: none;
+  padding: 10px 20px;
+  text-transform: lowercase;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  background:chocolate;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family:'Courier New', Courier, monospace;
+}
+
+code {
+  font-size: 16px;
+  white-space: pre;
+  margin: 0;
+  padding: 0;
+}
+
+header, .footer-content {
+  background: rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  z-index: 5;
+}
+
+header {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ position: relative;
+ margin-bottom: 35px;
+}
+
+small {
+  display: block;
+  margin: 30px 0 10px;
+  font-size: 12px;
+}
+
+.regLinks {
+  background:none;
+  padding: 0;
+  color: cadetblue;
+  text-decoration: underline;
+  margin: 0;
+  font-size: inherit;
+  text-align: left;
+}
+
+.regLinks:hover,
+.regLinks:focus {
+  color: chocolate;
+}
+
+.footer-content {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;  
+}
+
+nav {
+  margin:0;
+  padding: 0;
+  height: auto;
+  display:flex;
+  flex-direction: column;
+}
+
+main {
+  margin-top: 0;
+}
+
+.logo {
+  display: inline-block;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 2rem;
+  padding: 20px 0 30px;
+}
+
+.logo p {
+  margin: 15px 0 0 0;
+}
+
+.container {
+    max-width:1000px;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:0;
+  }
+
+  .quote, .content {
+    background:white;
+    position: relative;
+    z-index: 5;
+    height: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 1.3rem;
+    line-height: 1.4;
+    /* margin-top: 150px; */
+  }
+
+  .content {
+    margin: 35px auto 35px;
+  }
+
+  a.anchor {
+    display: block;
+    position: relative;
+    top: -350px;
+    visibility: hidden;
+}
+  
+  /* Style the button used to pause/play the video */
+  #myBtn, #randBtn {
+    margin: 0 0 0 10px;
+    float: right;
+    width: 200px;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    text-transform: none;
+    display: none;
+  }
+  
+  #myBtn:hover,
+  #randBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  #progress-links-pages {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  #progress-links-pages a {
+    margin: 2px;
+  }
+
+  #dayNumber, #dayNumberTop {
+    background-color: chocolate;
+    padding: 15px;
+    text-align: center;
+    color: white;
+  }
+
+  #dayNumber {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+  }
+
+  #dayNumberTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    font-size: 1.5em;
+  }
+
+  /* Media Queries */
+  @media(min-width: 500px) {
+    
+    .quote, .content {
+      font-size: 1.75rem;
+      line-height: 1.4;
+      padding: 25px 50px;
+      max-width: 800px;
+    }
+
+    .quote {
+      margin: 25px; auto 75px;
+    }
+
+    .logo {
+      margin: 0 20px 0 0;
+      padding: 0;
+    }
+
+
+
+  @media(min-width: 900px) {
+
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    height: 35px;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  #myBtn, #randBtn {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .quote {
+    margin: 200px auto 75px;
+  }
+
+  .content {
+    margin: 0 auto 75px;
+}
+
+#dayNumberTop {
+  top: 100px;
+  font-size: 4rem;
+}
+
+a.anchor {
+  top: -250px;
+}
+
+.moveContent {
+margin: 200px auto 75px;
+}
+
+}
+

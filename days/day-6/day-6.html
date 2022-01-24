@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>day 6 - dev playground</title>
+</head>
+<body>
+  <header>
+    <div id="dayNumberTop">6</div>
+    <nav>
+        <div class="logo"><p>devPlayground</p></div>
+        <a href="#quote" id="quoteLink">quote</a>
+        <a href="#content">content</a>
+        <a href="#progress-links-pages">progress</a>
+    </nav>
+    <div>
+      <button id="myBtn" onclick="myFunction()">🎥 pause</button>
+      <button id="randBtn" onclick="pickVideo()">🎥 random</button>
+    </div>
+  </header>
+    <main>
+    <video autoplay muted loop id="myVideo">
+        <source src="../../fish-video.mp4" type="video/mp4">
+      </video>
+      <div class="quote">
+          <a class="anchor" id="quote"></a>
+          <h2>Great Quotes</h2>
+          <blockquote><p>"A great quote goes here! I will do this with an API and Javascript. Stay tuned!"</p>
+            <cite>~Heidi</cite>
+          </blockquote>
+          <button id="quoteBtn">👍 New Quote</button>
+          <button id="hidequoteBtn">👎 No Quote</button>
+          <small>Powered by <a href="https://github.com/lukePeavey/quotable" class="regLinks" target="_blank">Quotable</a></small>
+      </div>
+      <div class="content">
+        <a class="anchor" id="content"></a>
+        <div id="dayNumber">6</div>
+        <h2>What's Next?</h2>
+        <p><strike>Build a feature to change the background video!</strike></p>
+        <p>Always more CSS.</p>
+        <p>Some samples of various techniques. Modals? Forms? Anything HTML, CSS, JavaScript that I want to practice.</p>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+          <div class="container">
+            <p><strong>01-24-2022: </strong>More videos under 50mb so GitHub will accept them. More better CSS.</p>
+            <h2>Progress</h2>
+            <div id="progress-links-pages">
+                <a href="../../index.html">latest</a>
+            </div>
+            <!-- Use a button to pause/play the video with JavaScript -->
+          </div>
+      </div>
+    </footer>
+    <script src="../../app-pages-mod.js" type="module"></script> 
+    <script src="../../video.js"></script> 
+</body>
+</html>
