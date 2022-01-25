@@ -3,7 +3,7 @@ var videoArray = ["fish-video", "koi-video", "koi2-video", "shoal-fish", "candle
 
 function pickVideo() {
     const vidIndex = Math.floor(Math.random() * (9));
-    document.querySelector('video').src = `../../${videoArray[vidIndex]}.mp4`;
+    document.querySelector('video').src = `../../video/${videoArray[vidIndex]}.mp4`;
 }
 
 // pickVideo();

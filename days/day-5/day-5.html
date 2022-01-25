@@ -19,11 +19,11 @@
   </header>
     <main>
     <video autoplay muted loop id="myVideo">
-        <source src="../../fish-video.mp4" type="video/mp4">
+        <source src="../../video/fish-video.mp4" type="video/mp4">
       </video>
       <div class="quote">
           <a class="anchor" id="quote"></a>
-          <blockquote><p>"A great quote goes here! I will do this with an API and Javascript. Stay tuned!"</p>
+          <blockquote><p>"The quote is broken here! On purpose, so the link to page 5.1 and all pages beyond will show on the bottom of the page! After day 5.1 you will have API quotes AND a link to ALL the existing pages. Thank you for your understanding."</p>
             <cite>~Heidi</cite>
           </blockquote>
           <button id="quoteBtn">I don't like quote 👎</button>
@@ -36,11 +36,11 @@
         <pre></pre>
         <h2></h2>
         <code>
-          &lt;script src="index.js" type="module"&gt;&lt;/script&gt;
+          &lt;script src="/js/index.js" type="module"&gt;&lt;/script&gt;
         </code> 
         <p>This is the code in index.js to import the array</p>
         <code>
-          import { pageLinks } from './page-array.js';
+          import { pageLinks } from './js/page-array.js';
         </code>
         <p>This is the code in page-array.js that exports the page array</p>
         <code>
@@ -74,6 +74,6 @@
           </div>
       </div>
     </footer>
-    <script src="../../app-pages-mod.js" type="module"></script> 
+    <script src="../../js/app-pages-mod.js" type="module"></script> 
 </body>
 </html>
