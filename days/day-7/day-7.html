@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>day 7 - dev play</title>
+</head>
+<body>
+  <header>
+    <div id="dayNumberTop">7</div>
+    <nav>
+        <a href="../../index.html">devPlay</a>
+        <a href="#quote" id="quoteLink">quote</a>
+        <a href="#content">content</a>
+        <a href="#progress-links-pages">progress</a>
+    </nav>
+    <div>
+      <button id="myBtn" onclick="myFunction()">🎥 pause</button>
+      <button id="randBtn" onclick="pickVideo()">🎥 random</button>
+    </div>
+  </header>
+  <main>
+    <video autoplay muted loop id="myVideo">
+        <source src="../../video/fish-video.mp4" type="video/mp4">
+    </video>
+    <div id="overlay">
+
+      <div id="modal">
+        <h2>Welcome to the Modal</h2>
+        <p>We're glad you are here.</p>
+        <img src="../../images/pexels-min-an-1305235.jpeg" alt= "one koi swimming in pond" />
+        <small>Photo by Min An from <a href="https://www.pexels.com/photo/orange-fish-underwater-1305235/" class="regLinks" target="_blank">Pexels</a></small>
+        <button id="closeModal">Close Modal</button>
+      </div>
+
+    </div>
+    
+    <div class="quote">
+        <a class="anchor" id="quote"></a>
+        <h2>Great Quotes</h2>
+          <blockquote><p>"A great quote goes here! I will do this with an API and Javascript. Stay tuned!"</p>
+          <cite>~Heidi</cite>
+        </blockquote>
+        <button id="quoteBtn">👍 New Quote</button>
+        <button id="hidequoteBtn">👎 No Quote</button>
+        <small>Powered by <a href="https://github.com/lukePeavey/quotable" class="regLinks" target="_blank">Quotable</a></small>
+    </div>
+    <div class="content">
+      <a class="anchor" id="content"></a>
+      <div id="dayNumber">7</div>
+      <p id="date"><strong>01-25-2022</strong></p>
+      <h2>Hello Modal</h2>
+      <p>Please click button below to see a modal in action.</p>
+      <p>You will enjoy this. There will be a pleasant surprise. I promise you.</p>
+      <button id="openModal">Open Modal</button>
+    </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+        <div class="container">
+          <h2>Progress</h2>
+          <div id="progress-links-pages">
+              <a href="../../index.html">latest</a>
+          </div>
+        </div>
+    </div>
+  </footer>
+  <script src="../../js/app-pages-mod.js" type="module"></script> 
+  <script src="../../js/video.js"></script> 
+  <script src="../../js/modal.js"></script> 
+</body>
+</html>
