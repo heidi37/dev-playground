@@ -12,7 +12,7 @@ const meta = document.createElement("meta");
 
 document.head.appendChild(meta);
 meta.setAttribute("http-equiv", "Refresh");
-meta.setAttribute("content", `0; url='days/day-${pageLinks[index]}/day-${pageLinks[index]}.html'`)
+meta.setAttribute("content", `0; url='days/${pageLinks[index]}/${pageLinks[index]}.html'`)
 
 
 

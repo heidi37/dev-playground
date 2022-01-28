@@ -5,7 +5,7 @@ const progressLinksPages = document.getElementById('progress-links-pages');
 
 for (let i = 0; i < pageLinks.length; i++) {
     progressLinksPages.innerHTML +=
-        `<a href="../../days/day-${pageLinks[i]}/day-${pageLinks[i]}.html">${pageLinks[i]}</a>  `
+        `<a href="../../days/${pageLinks[i]}/${pageLinks[i]}.html">${pageLinks[i]}</a>  `
 }
 
 // Powered by Quotable
