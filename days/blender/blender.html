@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <title>blender - dev play</title>
+</head>
+<body>
+  <header>
+    <div id="dayNumberTop">blender</div>
+    <nav>
+        <a href="../../index.html">devPlay</a>
+        <a href="#quote" id="quoteLink">quote</a>
+        <a href="#content">content</a>
+        <a href="#progress-links-pages">progress</a>
+    </nav>
+    <div>
+      <button id="myBtn" onclick="myFunction()">🎥 pause</button>
+      <button id="randBtn" onclick="pickVideo()">🎥 random</button>
+    </div>
+  </header>
+  <main>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="../../video/fish-video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="quote">
+        <a class="anchor" id="quote"></a>
+        <h2>Great Quotes</h2>
+          <blockquote><p></p>
+          <cite></cite>
+        </blockquote>
+        <button id="quoteBtn">👍 New Quote</button>
+        <button id="hidequoteBtn">👎 No Quote</button>
+        <small>Powered by <a href="https://github.com/lukePeavey/quotable" class="regLinks" target="_blank">Quotable</a></small>
+    </div>
+
+    <div class="content">
+      <a class="anchor" id="content"></a>
+      <div id="dayNumber">blender</div>
+      <p id="date"><strong>01-30-2022</strong></p>
+      <h2>Blender</h2>
+      <p>I downloaded <a class="regLinks" href="https://www.blender.org/" target="_blank">blender</a> so I can make 3d models from flat images and possibly turn them into papercrafts.</p>
+      <p>The window is called the <strong>3D Viewport</strong></p>
+      <p>By default, a cube, a lamp and a camera are showing.</p>
+      <h3>Hot Keys</h3>
+      <p>It seems pretty critical to learn the hot keys quickly in blender.</p>
+      <pre><code class="language-html">[F12] - render
+
+[G] - grab, tap X, Y, Z or G + hold middle mouse
+
+[R] - rotate, tap X, Y, Z or G + hold middle mouse
+
+[S] - scale, tap X, Y, Z or G + hold middle mouse
+
+[esc] or right click - cancels the movement
+
+[middlemouse - orbit, move view
+
+[shift] + [middlemouse] - pan
+
+[mousewheel] - zoom in and out
+
+[ctrl] + [middlemouse] - smooth scroll, drag
+
+[alt] + [middlemouse] - snap to nearest axis
+
+numpad [period] - focus on any selected object
+
+numpad [1](front), [3](side) [7](top) - align view to axis
+
+numpad [5](in and out of perspective mode)
+
+numpad [0] - look through the camera
+
+shift + [D] - duplicate
+
+[X] - delete
+
+shift + [A] - add
+
+[N] - properties of selection
+
+[ctrl] + [A] - apply your scale
+
+[~] - position short cuts
+
+[o] - proportional editing
+
+[tab] - edit mode
+
+[alt] + [s] - move in the direction the vertices are facing.
+
+[alt] + [r] - clears any rotation
+
+[alt] + [g] - clears any movement
+
+[r] + [x] + 90 - rotate 90 degrees on x axis
+      </code></pre>
+      <h3>Notes</h3>
+      <p><strong>orthographic mode</strong> - a flat view, no depth in scene</p>
+      <p><strong>mesh</strong> - to render anything you need to start with a mesh.</p>
+      <p><strong>apply scale</strong> - things will work better in the future. Sets scale to 1.</p>
+      <p>In 3d rendering there is <strong>flat</strong> and <strong>smooth</strong> shading. Shade smooth is actually an illusion. It is not adding any geometry. The silhouette will still be jagged. You can see how high poly something is by the silhouette</p>
+      <p><strong>Modifier(wrench) &gt; Generate &gt; Subdivision Surface</strong> - doubles the amount of detail across the entire mesh.</p>
+      <p>The points in the mesh are called <strong>vertices</strong>. A single point is called a <strong>vertex</strong>.</p>
+      <p><strong>Proportional Editing</strong> - when grab, scale, rotate... grabs vertices around the vertice and moves together as a whole. By default the proportional size is really high. Click a vertex and scroll down.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+        <div class="container">
+          <h2>Progress</h2>
+          <div id="progress-links-pages">
+              <a href="../../index.html">latest</a>
+          </div>
+        </div>
+    </div>
+  </footer>
+  <script src="../../js/app-pages-mod.js" type="module"></script> 
+  <script src="../../js/video.js"></script> 
+  <script src="../../js/modal.js"></script>
+  <script src="../../js/prism.js"></script>
+</body>
+</html>

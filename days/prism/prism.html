@@ -60,6 +60,33 @@
       padding: 25px;
     }
     </code></pre>
+    <p>To use prism you need to download the .js and .css files and include them in your documents. You have choices as to which languages and plugins you want included in these files. The less you choose the smaller the files. Here is how you include the downloaded files</p>
+    <pre><code class="language-html">
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    ...
+    &lt;link href="themes/prism.css" 
+    rel="stylesheet" /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    ...
+    &lt;script src="prism.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+    </code></pre>
+    <p>This is how flag your text in the html to use prism</p>
+    <pre><code class="language-html">
+  &lt;pre&gt;&lt;code class="language-css"&gt;
+  p { color: red }&lt;/code&gt;&lt;/pre&gt;
+    </code></pre>
+    <p>Caveat: it is a little more complicated when you want to show html code. Because you are in an html document it doesn't want to display on the page the "&lt;" & "&gt;". So you have to find and replace them in the text you want to display on the page.</p>
+    <!-- <pre><code class="language-text">
+  &lt;pre&gt;&lt;code class="language-html"&gt;
+    &lt;pre&gt;&lt;code class="language-css"&gt;
+    p { color: red }&lt;/code&gt;&lt;/pre&gt;
+  &lt;/code&gt;&lt;/pre&gt;
+    </code></pre> -->
     </div>
     </div>
   </main>
@@ -75,7 +102,6 @@
   </footer>
   <script src="../../js/app-pages-mod.js" type="module"></script> 
   <script src="../../js/video.js"></script> 
-  <script src="../../js/modal.js"></script>
   <script src="../../js/prism.js"></script>
 </body>
 </html>
